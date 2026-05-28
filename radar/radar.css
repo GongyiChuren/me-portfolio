@@ -116,16 +116,21 @@ h1 {
 }
 .tabs button.active, .tabs button:hover { background: var(--ink); color: #fff; }
 .searchbox {
-  min-width: min(360px, 100%);
+  min-width: min(320px, 100%);
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 8px 12px;
+  gap: 7px;
+  padding: 7px 11px;
   border: 1px solid var(--line);
   border-radius: 999px;
-  background: #fff;
+  background: rgba(255,255,250,.78);
 }
-.searchbox span { color: var(--faint); font-size: .86rem; }
+.searchbox span {
+  width: 1.2em;
+  text-align: center;
+  opacity: .72;
+  line-height: 1;
+}
 .searchbox input { width: 100%; border: 0; outline: 0; background: transparent; color: var(--ink); font: inherit; }
 
 .radar-layout {

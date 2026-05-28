@@ -4,20 +4,15 @@ const state = {
   query: '',
 };
 
-const labels = {
-  github: 'GitHub',
-  hn: 'HN',
-  arxiv: 'arXiv',
-  blogs: 'Blogs',
-  highlights: '精选',
-};
-
 const kindLabels = {
   repo: 'Repo',
   story: 'Story',
   paper: 'Paper',
   blog: 'Blog',
+  reddit: 'Reddit',
 };
+
+const sectionIds = ['highlights', 'github', 'hn', 'reddit', 'arxiv', 'blogs'];
 
 function fmtDate(value) {
   if (!value) return '';
@@ -37,7 +32,7 @@ function fmtUpdated(value) {
 }
 
 function itemText(item) {
-  return [item.title, item.summary, item.source, item.language, ...(item.categories || []), ...(item.authors || [])]
+  return [item.title, item.summary, item.source, item.subreddit, item.language, ...(item.categories || []), ...(item.authors || [])]
     .filter(Boolean)
     .join(' ')
     .toLowerCase();
@@ -67,7 +62,9 @@ function renderCard(item) {
   if (item.stars != null) chips.push(`★ ${Number(item.stars).toLocaleString()}`);
   if (item.language) chips.push(item.language);
   if (item.points != null) chips.push(`${item.points} points`);
+  if (item.score != null && item.kind === 'reddit') chips.push(`${Math.round(item.score)} signal`);
   if (item.commentsUrl) chips.push(`<a href="${item.commentsUrl}" target="_blank" rel="noreferrer">${item.comments || 0} comments</a>`);
+  if (item.subreddit) chips.push(`r/${item.subreddit}`);
   if (item.categories?.length) chips.push(item.categories.slice(0, 3).join(' · '));
   if (item.authors?.length) chips.push(item.authors.slice(0, 2).join(', '));
   extra.innerHTML = chips.map((chip) => `<span>${chip}</span>`).join('');
@@ -90,7 +87,7 @@ function renderSection(section) {
 }
 
 function renderAll() {
-  ['highlights', 'github', 'hn', 'arxiv', 'blogs'].forEach(renderSection);
+  sectionIds.forEach(renderSection);
   document.querySelectorAll('.section-block').forEach((block) => {
     const section = block.id.replace('-block', '');
     block.style.display = state.active === 'highlights' || state.active === section ? '' : 'none';
@@ -106,6 +103,7 @@ function renderStatus() {
   document.querySelector('#counts-text').textContent = [
     `GitHub ${counts.github || 0}`,
     `HN ${counts.hn || 0}`,
+    `Reddit ${counts.reddit || 0}`,
     `arXiv ${counts.arxiv || 0}`,
     `Blogs ${counts.blogs || 0}`,
   ].join(' · ');
@@ -122,7 +120,7 @@ async function loadData() {
       generatedAt: null,
       counts: {},
       highlights: [],
-      sections: { github: [], hn: [], arxiv: [], blogs: [] },
+      sections: { github: [], hn: [], reddit: [], arxiv: [], blogs: [] },
     };
     document.querySelector('#updated-text').textContent = '数据读取失败';
     document.querySelector('#counts-text').textContent = '稍后重试或返回主页';
@@ -136,7 +134,7 @@ document.querySelector('#tabs').addEventListener('click', (event) => {
   if (!btn) return;
   state.active = btn.dataset.section;
   renderAll();
-  document.querySelector('.toolbar').scrollIntoView({ block: 'start', behavior: 'smooth' });
+  document.querySelector('.controls').scrollIntoView({ block: 'start', behavior: 'smooth' });
 });
 
 document.querySelector('#search').addEventListener('input', (event) => {

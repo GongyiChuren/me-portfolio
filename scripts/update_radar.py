@@ -187,6 +187,51 @@ def fetch_hn(limit: int = 18) -> list[dict[str, Any]]:
     return uniq(collected, limit)
 
 
+def fetch_reddit(limit: int = 18) -> list[dict[str, Any]]:
+    subreddits = ["LocalLLaMA", "MachineLearning", "artificial", "OpenAI"]
+    collected: list[dict[str, Any]] = []
+    cutoff = NOW - timedelta(days=3)
+    for subreddit in subreddits:
+        url = f"https://www.reddit.com/r/{subreddit}/hot.json?" + urllib.parse.urlencode({"limit": "10", "raw_json": "1"})
+        try:
+            data = get_json(url, headers={"Accept": "application/json"})
+        except Exception as exc:
+            print(f"reddit fetch failed r/{subreddit}: {exc}", file=sys.stderr)
+            continue
+        for child in data.get("data", {}).get("children", []):
+            post = child.get("data", {})
+            if post.get("stickied"):
+                continue
+            created = datetime.fromtimestamp(float(post.get("created_utc") or 0), tz=timezone.utc)
+            if created < cutoff:
+                continue
+            title = post.get("title") or ""
+            selftext = post.get("selftext") or ""
+            permalink = post.get("permalink") or ""
+            target = "https://www.reddit.com" + permalink if permalink.startswith("/") else post.get("url")
+            relevance = score_text(title, selftext, subreddit)
+            if relevance <= 0:
+                continue
+            ups = int(post.get("ups") or post.get("score") or 0)
+            comments = int(post.get("num_comments") or 0)
+            collected.append({
+                "title": short(title, 170),
+                "url": target,
+                "commentsUrl": "https://www.reddit.com" + permalink if permalink.startswith("/") else target,
+                "summary": short(selftext or post.get("link_flair_text") or f"r/{subreddit} discussion", 220),
+                "source": "Reddit",
+                "kind": "reddit",
+                "subreddit": subreddit,
+                "points": ups,
+                "comments": comments,
+                "updatedAt": created.isoformat(),
+                "score": relevance + ups / 90 + comments / 60,
+            })
+        time.sleep(0.4)
+    collected.sort(key=lambda x: (x.get("score") or 0, x.get("comments") or 0), reverse=True)
+    return uniq(collected, limit)
+
+
 def fetch_arxiv(limit: int = 16) -> list[dict[str, Any]]:
     query = 'cat:cs.AI OR cat:cs.CL OR cat:cs.LG OR cat:cs.CV OR cat:cs.SE OR cat:cs.PL'
     url = "https://export.arxiv.org/api/query?" + urllib.parse.urlencode({
@@ -269,7 +314,6 @@ def parse_feed(raw: bytes, source: str, limit: int) -> list[dict[str, Any]]:
 def fetch_blogs(limit: int = 18) -> list[dict[str, Any]]:
     feeds = [
         ("OpenAI Blog", "https://openai.com/blog/rss.xml"),
-        ("Anthropic News", "https://openrss.org/www.anthropic.com/news"),
         ("Google AI Blog", "https://blog.google/technology/ai/rss/"),
         ("Hugging Face Blog", "https://huggingface.co/blog/feed.xml"),
         ("Simon Willison", "https://simonwillison.net/atom/everything/"),
@@ -289,6 +333,7 @@ def build_payload() -> dict[str, Any]:
     sections = {
         "github": fetch_github(),
         "hn": fetch_hn(),
+        "reddit": fetch_reddit(),
         "arxiv": fetch_arxiv(),
         "blogs": fetch_blogs(),
     }

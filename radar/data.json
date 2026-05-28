@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-28T11:39:18.406534+00:00",
+  "generatedAt": "2026-05-28T14:31:00.499207+00:00",
   "site": "https://me.gongyichuren.de/radar/",
   "sections": {
     "github": [
@@ -10,10 +10,10 @@
         "source": "GitHub",
         "kind": "repo",
         "language": "C",
-        "stars": 4632,
+        "stars": 4635,
         "forks": 296,
-        "updatedAt": "2026-05-28T11:23:57+00:00",
-        "score": 45.6
+        "updatedAt": "2026-05-28T14:23:47+00:00",
+        "score": 45.625
       },
       {
         "title": "perplexityai/bumblebee",
@@ -22,10 +22,10 @@
         "source": "GitHub",
         "kind": "repo",
         "language": "Go",
-        "stars": 3693,
-        "forks": 313,
-        "updatedAt": "2026-05-28T11:31:57+00:00",
-        "score": 36.775
+        "stars": 3713,
+        "forks": 315,
+        "updatedAt": "2026-05-28T14:28:31+00:00",
+        "score": 36.94166666666666
       },
       {
         "title": "DenisSergeevitch/agents-best-practices",
@@ -34,10 +34,10 @@
         "source": "GitHub",
         "kind": "repo",
         "language": null,
-        "stars": 1106,
+        "stars": 1107,
         "forks": 100,
-        "updatedAt": "2026-05-28T11:32:27+00:00",
-        "score": 27.21666666666667
+        "updatedAt": "2026-05-28T11:41:19+00:00",
+        "score": 27.225
       },
       {
         "title": "wanshuiyin/ARIS-in-AI-Offer",
@@ -58,10 +58,10 @@
         "source": "GitHub",
         "kind": "repo",
         "language": "JavaScript",
-        "stars": 147,
-        "forks": 24,
-        "updatedAt": "2026-05-28T11:34:38+00:00",
-        "score": 24.225
+        "stars": 204,
+        "forks": 36,
+        "updatedAt": "2026-05-28T14:20:17+00:00",
+        "score": 24.7
       },
       {
         "title": "study8677/awesome-architecture",
@@ -70,10 +70,10 @@
         "source": "GitHub",
         "kind": "repo",
         "language": "Vue",
-        "stars": 660,
-        "forks": 66,
-        "updatedAt": "2026-05-28T11:29:36+00:00",
-        "score": 22.5
+        "stars": 692,
+        "forks": 71,
+        "updatedAt": "2026-05-28T14:30:13+00:00",
+        "score": 22.766666666666666
       },
       {
         "title": "Doorman11991/smallcode",
@@ -82,10 +82,10 @@
         "source": "GitHub",
         "kind": "repo",
         "language": "JavaScript",
-        "stars": 1500,
-        "forks": 112,
-        "updatedAt": "2026-05-28T10:35:06+00:00",
-        "score": 21.5
+        "stars": 1504,
+        "forks": 111,
+        "updatedAt": "2026-05-28T14:21:01+00:00",
+        "score": 21.53333333333333
       },
       {
         "title": "datawhalechina/Agent-Learning-Hub",
@@ -94,10 +94,10 @@
         "source": "GitHub",
         "kind": "repo",
         "language": "HTML",
-        "stars": 1827,
+        "stars": 1841,
         "forks": 192,
-        "updatedAt": "2026-05-28T11:19:30+00:00",
-        "score": 21.225
+        "updatedAt": "2026-05-28T14:27:43+00:00",
+        "score": 21.34166666666667
       },
       {
         "title": "UditAkhourii/adhd",
@@ -106,10 +106,10 @@
         "source": "GitHub",
         "kind": "repo",
         "language": "TypeScript",
-        "stars": 405,
-        "forks": 19,
-        "updatedAt": "2026-05-28T11:03:27+00:00",
-        "score": 19.375
+        "stars": 419,
+        "forks": 20,
+        "updatedAt": "2026-05-28T14:17:37+00:00",
+        "score": 19.491666666666667
       },
       {
         "title": "aa0101181514/tw-legal-rag",
@@ -118,10 +118,10 @@
         "source": "GitHub",
         "kind": "repo",
         "language": "Python",
-        "stars": 106,
-        "forks": 13,
-        "updatedAt": "2026-05-28T11:31:24+00:00",
-        "score": 18.883333333333333
+        "stars": 111,
+        "forks": 14,
+        "updatedAt": "2026-05-28T14:13:01+00:00",
+        "score": 18.925
       },
       {
         "title": "Helvesec/rmux",
@@ -130,10 +130,10 @@
         "source": "GitHub",
         "kind": "repo",
         "language": "Rust",
-        "stars": 1297,
-        "forks": 50,
-        "updatedAt": "2026-05-28T10:47:19+00:00",
-        "score": 18.808333333333334
+        "stars": 1302,
+        "forks": 51,
+        "updatedAt": "2026-05-28T13:24:08+00:00",
+        "score": 18.85
       },
       {
         "title": "aqua5230/usage",
@@ -144,7 +144,7 @@
         "language": "Python",
         "stars": 156,
         "forks": 31,
-        "updatedAt": "2026-05-28T09:04:52+00:00",
+        "updatedAt": "2026-05-28T13:55:32+00:00",
         "score": 18.3
       },
       {
@@ -154,10 +154,10 @@
         "source": "GitHub",
         "kind": "repo",
         "language": "TypeScript",
-        "stars": 972,
-        "forks": 84,
-        "updatedAt": "2026-05-28T11:39:18+00:00",
-        "score": 17.1
+        "stars": 1100,
+        "forks": 87,
+        "updatedAt": "2026-05-28T14:30:39+00:00",
+        "score": 18.166666666666664
       },
       {
         "title": "Harkirat1462/claude-code-cli",
@@ -166,10 +166,22 @@
         "source": "GitHub",
         "kind": "repo",
         "language": "TypeScript",
-        "stars": 129,
+        "stars": 145,
         "forks": 0,
-        "updatedAt": "2026-05-28T11:38:12+00:00",
-        "score": 17.075
+        "updatedAt": "2026-05-28T14:29:44+00:00",
+        "score": 17.208333333333332
+      },
+      {
+        "title": "OpenBMB/PilotDeck",
+        "url": "https://github.com/OpenBMB/PilotDeck",
+        "summary": "Task-oriented AI Agent productivity platform",
+        "source": "GitHub",
+        "kind": "repo",
+        "language": "TypeScript",
+        "stars": 1320,
+        "forks": 97,
+        "updatedAt": "2026-05-28T14:30:56+00:00",
+        "score": 17.0
       },
       {
         "title": "jaychempan/coding-with-beat",
@@ -184,28 +196,16 @@
         "score": 16.883333333333333
       },
       {
-        "title": "OpenBMB/PilotDeck",
-        "url": "https://github.com/OpenBMB/PilotDeck",
-        "summary": "Task-oriented AI Agent productivity platform",
-        "source": "GitHub",
-        "kind": "repo",
-        "language": "TypeScript",
-        "stars": 1215,
-        "forks": 85,
-        "updatedAt": "2026-05-28T11:39:04+00:00",
-        "score": 16.125
-      },
-      {
         "title": "ATOM00blue/machine-learning-library",
         "url": "https://github.com/ATOM00blue/machine-learning-library",
         "summary": "A hand-curated library of the best machine learning education — 590 docs (78 arXiv papers, 474 course lectures from Stanford/MIT/Karpathy/fast.ai, 38 explainer articles), normalized to Markdown with full provenance. A c…",
         "source": "GitHub",
         "kind": "repo",
         "language": null,
-        "stars": 29,
-        "forks": 2,
-        "updatedAt": "2026-05-28T11:27:22+00:00",
-        "score": 15.241666666666667
+        "stars": 44,
+        "forks": 3,
+        "updatedAt": "2026-05-28T14:23:18+00:00",
+        "score": 15.366666666666667
       },
       {
         "title": "basketikun/infinite-canvas",
@@ -214,10 +214,10 @@
         "source": "GitHub",
         "kind": "repo",
         "language": "TypeScript",
-        "stars": 694,
-        "forks": 144,
-        "updatedAt": "2026-05-28T11:18:34+00:00",
-        "score": 14.783333333333333
+        "stars": 701,
+        "forks": 146,
+        "updatedAt": "2026-05-28T13:50:29+00:00",
+        "score": 14.841666666666667
       }
     ],
     "hn": [
@@ -438,8 +438,600 @@
         "score": 6.145833333333334
       }
     ],
-    "arxiv": [],
+    "reddit": [
+      {
+        "title": "The Party is cancelled, pack it up",
+        "url": "https://www.reddit.com/r/OpenAI/comments/1tpvhup/the_party_is_cancelled_pack_it_up/",
+        "commentsUrl": "https://www.reddit.com/r/OpenAI/comments/1tpvhup/the_party_is_cancelled_pack_it_up/",
+        "summary": "Ai slopped",
+        "source": "Reddit",
+        "kind": "reddit",
+        "subreddit": "OpenAI",
+        "points": 1314,
+        "comments": 193,
+        "updatedAt": "2026-05-28T06:38:06+00:00",
+        "score": 23.81666666666667
+      },
+      {
+        "title": "Anthropic researcher: \"We keep finding things [inside AI models] that are unsettling\" ... \"We find structures that mirror results from human neuroscience. We find eviden…",
+        "url": "https://www.reddit.com/r/OpenAI/comments/1tpc2b5/anthropic_researcher_we_keep_finding_things/",
+        "commentsUrl": "https://www.reddit.com/r/OpenAI/comments/1tpc2b5/anthropic_researcher_we_keep_finding_things/",
+        "summary": "Video",
+        "source": "Reddit",
+        "kind": "reddit",
+        "subreddit": "OpenAI",
+        "points": 362,
+        "comments": 335,
+        "updatedAt": "2026-05-27T17:15:44+00:00",
+        "score": 18.605555555555554
+      },
+      {
+        "title": "The OpenClaw crisis is the most complete case study of agentic AI security failure. Here's the full timeline and technical breakdown.",
+        "url": "https://www.reddit.com/r/artificial/comments/1tq0t1g/the_openclaw_crisis_is_the_most_complete_case/",
+        "commentsUrl": "https://www.reddit.com/r/artificial/comments/1tq0t1g/the_openclaw_crisis_is_the_most_complete_case/",
+        "summary": "OpenClaw the open source AI agent platform with 346K+ GitHub stars had four chainable CVEs disclosed on May 15. But that was just the latest chapter. The crisis started in january and it's worse than most people realize…",
+        "source": "Reddit",
+        "kind": "reddit",
+        "subreddit": "artificial",
+        "points": 66,
+        "comments": 26,
+        "updatedAt": "2026-05-28T11:28:38+00:00",
+        "score": 18.166666666666668
+      },
+      {
+        "title": "I gave my AI agents email instead of better reasoning. They started fixing each other's bugs.",
+        "url": "https://www.reddit.com/r/artificial/comments/1tpnyvp/i_gave_my_ai_agents_email_instead_of_better/",
+        "commentsUrl": "https://www.reddit.com/r/artificial/comments/1tpnyvp/i_gave_my_ai_agents_email_instead_of_better/",
+        "summary": "Most multi-agent setups I've seen treat agents like isolated workers. Each one gets a task, runs it, returns a result. No awareness of each other. No way to coordinate. Just parallel execution with a shared clipboard. I…",
+        "source": "Reddit",
+        "kind": "reddit",
+        "subreddit": "artificial",
+        "points": 37,
+        "comments": 35,
+        "updatedAt": "2026-05-28T00:38:50+00:00",
+        "score": 17.994444444444444
+      },
+      {
+        "title": "AI-generated CUDA kernels silently break training and inference [R]",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1tpaw6x/aigenerated_cuda_kernels_silently_break_training/",
+        "commentsUrl": "https://www.reddit.com/r/MachineLearning/comments/1tpaw6x/aigenerated_cuda_kernels_silently_break_training/",
+        "summary": "Last month NVIDIA released [SOL-ExecBench](https://research.nvidia.com/benchmarks/sol-execbench), a new benchmark of 235 production CUDA kernels lifted from DeepSeek, Qwen, Gemma, and Kimi. We took several top-ranked AI…",
+        "source": "Reddit",
+        "kind": "reddit",
+        "subreddit": "MachineLearning",
+        "points": 229,
+        "comments": 20,
+        "updatedAt": "2026-05-27T16:35:33+00:00",
+        "score": 17.877777777777776
+      },
+      {
+        "title": "Behold! Probably the most ghetto local AI server:",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tpdt5m/behold_probably_the_most_ghetto_local_ai_server/",
+        "commentsUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1tpdt5m/behold_probably_the_most_ghetto_local_ai_server/",
+        "summary": "AKA: Jank Incarnate After months of pain, I finally got a working setup. There's a bunch of quirks about running a multi-Tesla setup. I was planning to write something about my experience after I get it running. Current…",
+        "source": "Reddit",
+        "kind": "reddit",
+        "subreddit": "LocalLLaMA",
+        "points": 473,
+        "comments": 262,
+        "updatedAt": "2026-05-27T18:14:46+00:00",
+        "score": 16.622222222222224
+      },
+      {
+        "title": "Vulnerability found in framework used by VLLM, many MCP servers, and other LLM tools",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tpp2th/vulnerability_found_in_framework_used_by_vllm/",
+        "commentsUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1tpp2th/vulnerability_found_in_framework_used_by_vllm/",
+        "summary": "Worth taking a look to see if this affects any of you. Surprised nobody has posted it yet.",
+        "source": "Reddit",
+        "kind": "reddit",
+        "subreddit": "LocalLLaMA",
+        "points": 395,
+        "comments": 66,
+        "updatedAt": "2026-05-28T01:27:29+00:00",
+        "score": 14.488888888888889
+      },
+      {
+        "title": "everybody suddenly technical",
+        "url": "https://www.reddit.com/r/OpenAI/comments/1tp5b77/everybody_suddenly_technical/",
+        "commentsUrl": "https://www.reddit.com/r/OpenAI/comments/1tp5b77/everybody_suddenly_technical/",
+        "summary": "Image",
+        "source": "Reddit",
+        "kind": "reddit",
+        "subreddit": "OpenAI",
+        "points": 705,
+        "comments": 39,
+        "updatedAt": "2026-05-27T13:17:18+00:00",
+        "score": 14.483333333333333
+      },
+      {
+        "title": "Reachy Mini goes fully local!",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tq4x48/reachy_mini_goes_fully_local/",
+        "commentsUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1tq4x48/reachy_mini_goes_fully_local/",
+        "summary": "Hi! Andi from Hugging Face here! My team has been working over the last few months on creating a super smooth local experience for conversations with Reachy Mini, see the video! We hope people can extend this into tons…",
+        "source": "Reddit",
+        "kind": "reddit",
+        "subreddit": "LocalLLaMA",
+        "points": 23,
+        "comments": 2,
+        "updatedAt": "2026-05-28T14:15:22+00:00",
+        "score": 13.28888888888889
+      },
+      {
+        "title": "I'm Tired of Talking to AI, Microsoft starts canceling Claude Code licenses and many other AI links from Hacker News",
+        "url": "https://www.reddit.com/r/artificial/comments/1tq54tu/im_tired_of_talking_to_ai_microsoft_starts/",
+        "commentsUrl": "https://www.reddit.com/r/artificial/comments/1tq54tu/im_tired_of_talking_to_ai_microsoft_starts/",
+        "summary": "Hey everyone, I just sent issue [**#34 of the AI Hacker Newsletter**](https://eomail4.com/web-version?p=af6dad0a-5a92-11f1-81ad-7bc299b175c3&pt=campaign&t=1779975979&s=e8884941c12c6bd8e0635ee21cd8daf418a3ffa859561357bf9…",
+        "source": "Reddit",
+        "kind": "reddit",
+        "subreddit": "artificial",
+        "points": 1,
+        "comments": 0,
+        "updatedAt": "2026-05-28T14:23:08+00:00",
+        "score": 13.011111111111111
+      },
+      {
+        "title": "What's your favorite local MCP server?",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tpwg33/whats_your_favorite_local_mcp_server/",
+        "commentsUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1tpwg33/whats_your_favorite_local_mcp_server/",
+        "summary": "I've seen so many rag this, memory that projects. What projects are people actually using day to day for agentic workloads. I only use 4, and I still consider that too much honestly. I just want to see what projects peo…",
+        "source": "Reddit",
+        "kind": "reddit",
+        "subreddit": "LocalLLaMA",
+        "points": 26,
+        "comments": 41,
+        "updatedAt": "2026-05-28T07:31:00+00:00",
+        "score": 12.972222222222223
+      },
+      {
+        "title": "Zai replaced the network architecture running GLM-5.1 inference and the gains are pretty wild",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tq35a0/zai_replaced_the_network_architecture_running/",
+        "commentsUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1tq35a0/zai_replaced_the_network_architecture_running/",
+        "summary": "Been following the infrastructure side of AI more lately and stumbled on this from Zai. They upgraded the network architecture on a thousand-GPU cluster running GLM-5.1 coding inference from the standard ROFT setup to s…",
+        "source": "Reddit",
+        "kind": "reddit",
+        "subreddit": "LocalLLaMA",
+        "points": 144,
+        "comments": 12,
+        "updatedAt": "2026-05-28T13:09:11+00:00",
+        "score": 12.799999999999999
+      },
+      {
+        "title": "Training GPT-like model on non-language series [R]",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1tprt80/training_gptlike_model_on_nonlanguage_series_r/",
+        "commentsUrl": "https://www.reddit.com/r/MachineLearning/comments/1tprt80/training_gptlike_model_on_nonlanguage_series_r/",
+        "summary": "I am responsible for a research project that is supposed to train a GPT-like model (Transformer-decoder) with 100M, 250M and 500M model variants. --- # params ## training dataset - 750M tokens - vocabulary is \\~15k to \\…",
+        "source": "Reddit",
+        "kind": "reddit",
+        "subreddit": "MachineLearning",
+        "points": 4,
+        "comments": 5,
+        "updatedAt": "2026-05-28T03:31:08+00:00",
+        "score": 12.127777777777778
+      },
+      {
+        "title": "BEAM 100K memory benchmark: CSM vs Hindsight local artifact comparison [R]",
+        "url": "https://www.reddit.com/r/MachineLearning/comments/1tpjx2m/beam_100k_memory_benchmark_csm_vs_hindsight_local/",
+        "commentsUrl": "https://www.reddit.com/r/MachineLearning/comments/1tpjx2m/beam_100k_memory_benchmark_csm_vs_hindsight_local/",
+        "summary": "\\[R\\] BEAM 100K memory benchmark: CSM vs Hindsight local artifact comparison I’m looking for feedback on a local agent-memory benchmark comparison, especially from people who care about evaluation methodology. I built a…",
+        "source": "Reddit",
+        "kind": "reddit",
+        "subreddit": "MachineLearning",
+        "points": 5,
+        "comments": 3,
+        "updatedAt": "2026-05-27T21:53:42+00:00",
+        "score": 10.105555555555556
+      },
+      {
+        "title": "Meta Ai Premium",
+        "url": "https://www.reddit.com/r/artificial/comments/1tq3xfa/meta_ai_premium/",
+        "commentsUrl": "https://www.reddit.com/r/artificial/comments/1tq3xfa/meta_ai_premium/",
+        "summary": "Primeira pergunta, quem vai pagar por essa porcaria? Cara, a parte mais inacreditável dessa história toda da Meta não é nem cobrarem assinatura. É cobrarem assinatura numa IA que ninguém genuinamente quer usar como prin…",
+        "source": "Reddit",
+        "kind": "reddit",
+        "subreddit": "artificial",
+        "points": 2,
+        "comments": 0,
+        "updatedAt": "2026-05-28T13:38:35+00:00",
+        "score": 10.022222222222222
+      },
+      {
+        "title": "Any thoughts? Maybe GPT5.6? Or is it just vagueposting?",
+        "url": "https://www.reddit.com/r/OpenAI/comments/1tpwx1z/any_thoughts_maybe_gpt56_or_is_it_just/",
+        "commentsUrl": "https://www.reddit.com/r/OpenAI/comments/1tpwx1z/any_thoughts_maybe_gpt56_or_is_it_just/",
+        "summary": "I thought 5.6 was supposed to come out in June. Does anyone know what this claim could be about? This guy posts often about codex, cc and cursor.",
+        "source": "Reddit",
+        "kind": "reddit",
+        "subreddit": "OpenAI",
+        "points": 35,
+        "comments": 32,
+        "updatedAt": "2026-05-28T07:58:24+00:00",
+        "score": 9.922222222222222
+      },
+      {
+        "title": "Qwen/Qwen-Image-Bench · Hugging Face",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tpww8m/qwenqwenimagebench_hugging_face/",
+        "commentsUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1tpww8m/qwenqwenimagebench_hugging_face/",
+        "summary": "# [](https://huggingface.co/Qwen/Qwen-Image-Bench#model-description)Model Description Q-Judger is a vision-language model fine-tuned specifically for automated evaluation of text-to-image generated images. Given a text…",
+        "source": "Reddit",
+        "kind": "reddit",
+        "subreddit": "LocalLLaMA",
+        "points": 54,
+        "comments": 10,
+        "updatedAt": "2026-05-28T07:57:06+00:00",
+        "score": 9.766666666666666
+      },
+      {
+        "title": "Looking for an AI image generator, what's the best one",
+        "url": "https://www.reddit.com/r/artificial/comments/1tp80d6/looking_for_an_ai_image_generator_whats_the_best/",
+        "commentsUrl": "https://www.reddit.com/r/artificial/comments/1tp80d6/looking_for_an_ai_image_generator_whats_the_best/",
+        "summary": "Obviously there are like hundreds of image gen websites and apps now that AI has become widespread. ChatGPT - not bad but looking for something more robust Midjourney - works well but kind of burns through money quickly…",
+        "source": "Reddit",
+        "kind": "reddit",
+        "subreddit": "artificial",
+        "points": 41,
+        "comments": 121,
+        "updatedAt": "2026-05-27T14:55:26+00:00",
+        "score": 8.472222222222221
+      }
+    ],
+    "arxiv": [
+      {
+        "title": "From Pixels to Words -- Towards Native One-Vision Models at Scale",
+        "url": "http://arxiv.org/abs/2605.28820v1",
+        "summary": "Current vision-language models (VLMs) typically stitch together separate image encoders and language decoders via multi-stage alignment, a modular framework that inevitably fragments pixel-level signals across frames and scatters early pixel-word interactions…",
+        "source": "arXiv",
+        "kind": "paper",
+        "authors": [
+          "Haiwen Diao",
+          "Jiahao Wang",
+          "Penghao Wu",
+          "Yuhao Dong"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "updatedAt": "2026-05-27T17:59:55+00:00",
+        "score": 3
+      },
+      {
+        "title": "PEFT-Arena: Understanding Parameter-Efficient Finetuning from a Stability-Plasticity Perspective",
+        "url": "http://arxiv.org/abs/2605.28819v1",
+        "summary": "Parameter-efficient finetuning (PEFT) has become the standard approach for adapting large language models, yet evaluations largely emphasize downstream accuracy while overlooking the retention of pretrained capabilities. We argue that PEFT should be assessed…",
+        "source": "arXiv",
+        "kind": "paper",
+        "authors": [
+          "Yangyi Huang",
+          "Ruotian Peng",
+          "Zeju Qiu",
+          "Jiale Kang"
+        ],
+        "categories": [
+          "cs.LG",
+          "cs.CL"
+        ],
+        "updatedAt": "2026-05-27T17:59:51+00:00",
+        "score": 3
+      },
+      {
+        "title": "VLMs May Not Globally Enhance Human Alignment over LLMs During Natural Reading",
+        "url": "http://arxiv.org/abs/2605.28818v1",
+        "summary": "Large language models (LLMs) have become increasingly useful computational models of human language processing, but it remains unclear whether vision-language learning makes text representations more human-like during natural reading. Here, we address this qu…",
+        "source": "arXiv",
+        "kind": "paper",
+        "authors": [
+          "Jinzhou Wu",
+          "Zhengwu Ma",
+          "Jixing Li",
+          "Baoping Tang"
+        ],
+        "categories": [
+          "cs.CL",
+          "q-bio.NC"
+        ],
+        "updatedAt": "2026-05-27T17:59:34+00:00",
+        "score": 6
+      },
+      {
+        "title": "Gamma-World: Generative Multi-Agent World Modeling Beyond Two Players",
+        "url": "http://arxiv.org/abs/2605.28816v1",
+        "summary": "World models for interactive video generation have largely focused on single-agent settings, where future observations are generated from a single control signal. However, many generated environments require multi-agent interaction: multiple players, robots,…",
+        "source": "arXiv",
+        "kind": "paper",
+        "authors": [
+          "Fangfu Liu",
+          "Kai He",
+          "Tianchang Shen",
+          "Tianshi Cao"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "updatedAt": "2026-05-27T17:59:31+00:00",
+        "score": 6
+      },
+      {
+        "title": "Self-Improving Language Models with Bidirectional Evolutionary Search",
+        "url": "http://arxiv.org/abs/2605.28814v1",
+        "summary": "Search has been proposed as an effective method for self-improving language models and agentic systems, both for post-training sample generation and for inference. However, widely used methods such as best-of-N sampling and tree search face two fundamental li…",
+        "source": "arXiv",
+        "kind": "paper",
+        "authors": [
+          "Guowei Xu",
+          "Zhenting Qi",
+          "Huangyuan Su",
+          "Weirui Ye"
+        ],
+        "categories": [
+          "cs.CL"
+        ],
+        "updatedAt": "2026-05-27T17:59:15+00:00",
+        "score": 10
+      },
+      {
+        "title": "HarmoVid: Relightful Video Portrait Harmonization",
+        "url": "http://arxiv.org/abs/2605.28811v1",
+        "summary": "We present a method for harmonizing the lighting of a foreground video to match a target background scene, adjusting shadows, color tone, and illumination intensity (relightful harmonization). Unlike images, acquiring labeled data for videos, where identical…",
+        "source": "arXiv",
+        "kind": "paper",
+        "authors": [
+          "Jun Myeong Choi",
+          "Jae Shin Yoon",
+          "Luchao Qi",
+          "Roni Sengupta"
+        ],
+        "categories": [
+          "cs.CV"
+        ],
+        "updatedAt": "2026-05-27T17:59:02+00:00",
+        "score": 3
+      },
+      {
+        "title": "Beyond Binary: Sim-to-Real Dexterous Manipulation with Physics-Grounded Contact Representation",
+        "url": "http://arxiv.org/abs/2605.28812v1",
+        "summary": "A primary bottleneck in contact-rich manipulation is the difficulty of collecting real-world data. Sim-to-real reinforcement learning offers a scalable alternative, but the simulation-reality gap prevents information-dense modalities like touch from being eff…",
+        "source": "arXiv",
+        "kind": "paper",
+        "authors": [
+          "Jiahe Pan",
+          "Stelian Coros",
+          "Jitendra Malik",
+          "Toru Lin"
+        ],
+        "categories": [
+          "cs.RO",
+          "cs.AI",
+          "cs.LG"
+        ],
+        "updatedAt": "2026-05-27T17:59:02+00:00",
+        "score": 3
+      },
+      {
+        "title": "Affective Music Recommendation: A Rollout-Based World Model for Offline Preference Optimization",
+        "url": "http://arxiv.org/abs/2605.28810v1",
+        "summary": "Functional music applications, from consumer focus and sleep aids to clinical interventions, share a distinctive recommendation problem: success is defined by the listener's affective state, but online experimentation on emotion is ethically constrained, part…",
+        "source": "arXiv",
+        "kind": "paper",
+        "authors": [
+          "Audrey Chan",
+          "Aaron Labbé",
+          "Jacob Lavoie",
+          "Jordan Bannister"
+        ],
+        "categories": [
+          "cs.LG",
+          "cs.IR",
+          "cs.SD"
+        ],
+        "updatedAt": "2026-05-27T17:58:46+00:00",
+        "score": 3
+      },
+      {
+        "title": "AREA: Attribute Extraction and Aggregation for CLIP-Based Class-Incremental Learning",
+        "url": "http://arxiv.org/abs/2605.28809v1",
+        "summary": "Class-Incremental Learning (CIL) is important in building real-world learning systems. In CLIP-based CIL, the model performs classification by comparing similarity between visual and textual embeddings obtained from template prompts, e.g., ``a photo of a [CLA…",
+        "source": "arXiv",
+        "kind": "paper",
+        "authors": [
+          "Zhen-Hao Xie",
+          "Yu-Cheng Shi",
+          "Da-Wei Zhou"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.LG"
+        ],
+        "updatedAt": "2026-05-27T17:58:16+00:00",
+        "score": 7
+      },
+      {
+        "title": "Calibrating Conservatism for Scalable Oversight",
+        "url": "http://arxiv.org/abs/2605.28807v1",
+        "summary": "Agentic AI systems capable of autonomous planning and extended environmental interaction pose a fundamental control problem: how can humans maintain meaningful oversight of systems that may exceed their own capabilities? Existing approaches to scalable oversi…",
+        "source": "arXiv",
+        "kind": "paper",
+        "authors": [
+          "William Overman",
+          "Mohsen Bayati"
+        ],
+        "categories": [
+          "cs.AI"
+        ],
+        "updatedAt": "2026-05-27T17:56:47+00:00",
+        "score": 7
+      },
+      {
+        "title": "Personal Visual Memory from Explicit and Implicit Evidence",
+        "url": "http://arxiv.org/abs/2605.28806v1",
+        "summary": "Long-term memory is increasingly important for personalized AI agents, yet existing benchmarks and methods remain largely text-centric. Even when images are included, the user-specific information needed for later questions is typically recoverable from text…",
+        "source": "arXiv",
+        "kind": "paper",
+        "authors": [
+          "Viet Nguyen",
+          "Thao Nguyen",
+          "Vishal M. Patel",
+          "Yuheng Li"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.CL",
+          "cs.IR"
+        ],
+        "updatedAt": "2026-05-27T17:56:11+00:00",
+        "score": 9
+      },
+      {
+        "title": "OmniVerifier-M1: Multimodal Meta-Verifier with Explicit Structured Recalibration",
+        "url": "http://arxiv.org/abs/2605.28805v1",
+        "summary": "Visual outcomes are increasingly central to multimodal large language models, making reliable and fine-grained verification essential for scaling generalist foundation models. In this work, we investigate multimodal meta-verification, which leverages verifier…",
+        "source": "arXiv",
+        "kind": "paper",
+        "authors": [
+          "Xinchen Zhang",
+          "Bowei Liu",
+          "Jiale Liu",
+          "Chufan Shi"
+        ],
+        "categories": [
+          "cs.CL",
+          "cs.AI",
+          "cs.CV",
+          "cs.LG"
+        ],
+        "updatedAt": "2026-05-27T17:56:04+00:00",
+        "score": 9
+      },
+      {
+        "title": "Ω-QVLA: Robust Quantization for Vision-Language-Action Models via Composite Rotation and Per-step Scaling",
+        "url": "http://arxiv.org/abs/2605.28803v1",
+        "summary": "Vision-Language-Action (VLA) models unify perception, reasoning, and control within a single policy, yet their multi-billion-parameter backbones and diffusion-based action heads make on-device deployment prohibitively expensive. Prior quantization efforts off…",
+        "source": "arXiv",
+        "kind": "paper",
+        "authors": [
+          "Xinyu Wang",
+          "Mingze Li",
+          "Sicheng Lyu",
+          "Dongxiu Liu"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.LG"
+        ],
+        "updatedAt": "2026-05-27T17:55:01+00:00",
+        "score": 3
+      },
+      {
+        "title": "Human Label Variation as Stable Signal: Learning Annotator-Specific Explanation Behavior via Cross-Annotator Preference Optimization",
+        "url": "http://arxiv.org/abs/2605.28802v1",
+        "summary": "Free-text explanations extend human label variation (HLV) beyond label disagreement by revealing the reasoning and preferences behind annotators' decisions. We study whether large language models (LLMs) can learn and reproduce such annotator-specific label-ex…",
+        "source": "arXiv",
+        "kind": "paper",
+        "authors": [
+          "Beiduo Chen",
+          "Pingjun Hong",
+          "Ziyun Zhang",
+          "Benjamin Roth"
+        ],
+        "categories": [
+          "cs.CL"
+        ],
+        "updatedAt": "2026-05-27T17:55:00+00:00",
+        "score": 3
+      },
+      {
+        "title": "CaMBRAIN: Real-time, Continuous EEG Inference with Causal State Space Models",
+        "url": "http://arxiv.org/abs/2605.28792v1",
+        "summary": "Electroencephalography (EEG) is a critical, non-invasive method to monitor electrical brain activity. EEGs can span anywhere from a couple seconds to multiple hours, posing a major hurdle for existing deep learning methods due to two major factors: (1) existi…",
+        "source": "arXiv",
+        "kind": "paper",
+        "authors": [
+          "Abhilash Durgam",
+          "Nyle Siddiqui",
+          "Jeffrey A. Chan-Santiago",
+          "Qiushi Fu"
+        ],
+        "categories": [
+          "cs.AI",
+          "cs.HC",
+          "cs.LG"
+        ],
+        "updatedAt": "2026-05-27T17:50:36+00:00",
+        "score": 9
+      },
+      {
+        "title": "Skill-Conditioned Gated Self-Distillation for LLM Reasoning",
+        "url": "http://arxiv.org/abs/2605.28791v1",
+        "summary": "On-policy self-distillation (SD) improves LLM reasoning by using teacher-side privileged information (PI) to turn sparse verifier outcomes into dense token-level supervision. Existing methods usually assume trusted PI, such as reference answers or successful…",
+        "source": "arXiv",
+        "kind": "paper",
+        "authors": [
+          "Jiazhen Huang",
+          "Xiao Chen",
+          "Xiao Luo",
+          "Yong Dai"
+        ],
+        "categories": [
+          "cs.CL",
+          "cs.AI"
+        ],
+        "updatedAt": "2026-05-27T17:49:52+00:00",
+        "score": 7
+      }
+    ],
     "blogs": [
+      {
+        "title": "RSI is the new AGI — and it’s just as hard to pin down",
+        "url": "https://techcrunch.com/2026/05/28/rsi-is-the-new-agi-and-its-just-as-hard-to-pin-down/",
+        "summary": "A new crop of AI labs are focused on recursive self-improvement — but the goal is proving elusive.",
+        "source": "TechCrunch AI",
+        "kind": "blog",
+        "updatedAt": "2026-05-28T14:30:17+00:00",
+        "score": 4
+      },
+      {
+        "title": "At TechCrunch Disrupt 2026: Databricks’ co-founder on what kills enterprise AI deals",
+        "url": "https://techcrunch.com/2026/05/28/techcrunch-disrupt-2026-databricks-co-founder-on-what-kills-enterprise-ai-deals/",
+        "summary": "Enterprise AI is entering a different phase now, one where enterprises are no longer evaluating whether AI is exciting. They are evaluating whether it is safe to deploy broadly.",
+        "source": "TechCrunch AI",
+        "kind": "blog",
+        "updatedAt": "2026-05-28T14:30:00+00:00",
+        "score": 3
+      },
+      {
+        "title": "YouTube adds new podcast features, including an AI recommendation tool and ‘Auto speed’",
+        "url": "https://techcrunch.com/2026/05/28/youtube-adds-new-podcast-features-including-an-ai-recommendation-tool-and-auto-speed/",
+        "summary": "The update signals YouTube's ongoing efforts to compete with other platforms for podcast audiences.",
+        "source": "TechCrunch AI",
+        "kind": "blog",
+        "updatedAt": "2026-05-28T14:28:47+00:00",
+        "score": 4
+      },
+      {
+        "title": "Visa invests in Replit to power agentic payments for developers",
+        "url": "https://techcrunch.com/2026/05/28/visa-invests-in-replit-to-power-agentic-payments-for-developers/",
+        "summary": "Visa said that over 1,000 employees has been using Replit for prototyping and development",
+        "source": "TechCrunch AI",
+        "kind": "blog",
+        "updatedAt": "2026-05-28T14:00:00+00:00",
+        "score": 7
+      },
+      {
+        "title": "2 days left: Lock in ticket savings of up to $410 to TechCrunch Disrupt 2026",
+        "url": "https://techcrunch.com/2026/05/28/2-days-left-lock-in-ticket-savings-of-up-to-410-to-techcrunch-disrupt-2026/",
+        "summary": "Savings of up to $410 on TechCrunch Disrupt 2026 tickets end tomorrow, May 29, 11:59 p.m. PT. Register now to save and join 10,000+ tech leaders on October 13-15 in San Francisco.",
+        "source": "TechCrunch AI",
+        "kind": "blog",
+        "updatedAt": "2026-05-28T14:00:00+00:00",
+        "score": 0
+      },
+      {
+        "title": "Has the hunt for AI compute uncovered the next Cerebras?",
+        "url": "https://techcrunch.com/2026/05/28/has-the-hunt-for-ai-compute-uncovered-the-next-cerebras/",
+        "summary": "General Compute is betting SambaNova will be the next breakout chipmaker.",
+        "source": "TechCrunch AI",
+        "kind": "blog",
+        "updatedAt": "2026-05-28T13:00:00+00:00",
+        "score": 3
+      },
       {
         "title": "Vertu wants CEOs to run companies from an AI foldable starting at $6,880",
         "url": "https://techcrunch.com/2026/05/28/vertu-wants-ceos-to-run-companies-from-an-ai-foldable-starting-at-6880/",
@@ -486,24 +1078,6 @@
         "score": 3
       },
       {
-        "title": "Your SEO strategy is optimized for a search engine that no longer exists.",
-        "url": "https://techcrunch.com/podcast/your-seo-strategy-is-optimized-for-a-search-engine-that-no-longer-exists/",
-        "summary": "Google I/O made it official: AI-generated answers are now front and center in search, and most brands have almost no visibility into how AI is describing them to their customers. For anyone who has spent years building a strategy…",
-        "source": "TechCrunch AI",
-        "kind": "blog",
-        "updatedAt": "2026-05-27T18:39:17+00:00",
-        "score": 4
-      },
-      {
-        "title": "Meta launches Instagram, Facebook, and WhatsApp subscriptions, with more to come, including AI plans",
-        "url": "https://techcrunch.com/2026/05/27/meta-officially-launches-instagram-facebook-and-whatsapp-subscriptions-with-more-to-come-including-ai-plans/",
-        "summary": "Meta is rolling out paid subscription plans for Instagram, Facebook, and WhatsApp worldwide, while also testing new AI, creator, and business-focused offerings under its broader “Meta One” subscription brand.",
-        "source": "TechCrunch AI",
-        "kind": "blog",
-        "updatedAt": "2026-05-27T18:00:00+00:00",
-        "score": 3
-      },
-      {
         "title": "ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks — by Artificial Analysis and IBM",
         "url": "https://huggingface.co/blog/ibm-research/itbench-aa",
         "summary": "",
@@ -520,42 +1094,6 @@
         "kind": "blog",
         "updatedAt": "2026-05-27T16:38:35+00:00",
         "score": 36
-      },
-      {
-        "title": "AI coding startup Cognition raises $1B at $25B pre-money valuation",
-        "url": "https://techcrunch.com/2026/05/27/ai-coding-startup-cognition-raises-1b-at-25b-pre-money-valuation/",
-        "summary": "As Cognition reaches $492 million in annualized revenue run rate, it more than doubled its valuation in eight months, it says.",
-        "source": "TechCrunch AI",
-        "kind": "blog",
-        "updatedAt": "2026-05-27T16:00:00+00:00",
-        "score": 3
-      },
-      {
-        "title": "Startup Battlefield 200 applications close today: Nominate a founder or submit your startup",
-        "url": "https://techcrunch.com/2026/05/27/startup-battlefield-200-applications-close-today-nominate-a-founder-or-submit-your-startup/",
-        "summary": "Today is the final day to apply or nominate a startup for Startup Battlefield 200. Once the clock strikes 11:59 p.m. PT, the window closes on your chance to compete for $100,000 in equity-free funding, gain global visibility, con…",
-        "source": "TechCrunch AI",
-        "kind": "blog",
-        "updatedAt": "2026-05-27T14:15:00+00:00",
-        "score": 3
-      },
-      {
-        "title": "ElevenLabs’ new music-generation model can switch genres mid-track",
-        "url": "https://techcrunch.com/2026/05/27/elevenlabss-new-music-generation-model-can-switch-genres-mid-track/",
-        "summary": "ElevenLabs' new model will let users regenerate a section of a song without affecting the rest of the track.",
-        "source": "TechCrunch AI",
-        "kind": "blog",
-        "updatedAt": "2026-05-27T14:14:10+00:00",
-        "score": 0
-      },
-      {
-        "title": "TechCrunch Disrupt 2026 Early Bird ticket savings end in 3 days",
-        "url": "https://techcrunch.com/2026/05/27/techcrunch-disrupt-2026-early-bird-ticket-savings-end-in-3-days/",
-        "summary": "There are only 3 days left to save up to $410 on your ticket to TechCrunch Disrupt 2026. Early Bird pricing ends May 29 at 11:59 p.m. PT, and once the deadline passes, ticket prices increase. If you plan to attend one of the most…",
-        "source": "TechCrunch AI",
-        "kind": "blog",
-        "updatedAt": "2026-05-27T14:00:00+00:00",
-        "score": 4
       },
       {
         "title": "Cisco and OpenAI redefine enterprise engineering with Codex",
@@ -612,10 +1150,10 @@
       "source": "GitHub",
       "kind": "repo",
       "language": "C",
-      "stars": 4632,
+      "stars": 4635,
       "forks": 296,
-      "updatedAt": "2026-05-28T11:23:57+00:00",
-      "score": 45.6
+      "updatedAt": "2026-05-28T14:23:47+00:00",
+      "score": 45.625
     },
     {
       "title": "perplexityai/bumblebee",
@@ -624,10 +1162,10 @@
       "source": "GitHub",
       "kind": "repo",
       "language": "Go",
-      "stars": 3693,
-      "forks": 313,
-      "updatedAt": "2026-05-28T11:31:57+00:00",
-      "score": 36.775
+      "stars": 3713,
+      "forks": 315,
+      "updatedAt": "2026-05-28T14:28:31+00:00",
+      "score": 36.94166666666666
     },
     {
       "title": "I think Anthropic and OpenAI have found product-market fit",
@@ -645,10 +1183,10 @@
       "source": "GitHub",
       "kind": "repo",
       "language": null,
-      "stars": 1106,
+      "stars": 1107,
       "forks": 100,
-      "updatedAt": "2026-05-28T11:32:27+00:00",
-      "score": 27.21666666666667
+      "updatedAt": "2026-05-28T11:41:19+00:00",
+      "score": 27.225
     },
     {
       "title": "wanshuiyin/ARIS-in-AI-Offer",
@@ -669,10 +1207,23 @@
       "source": "GitHub",
       "kind": "repo",
       "language": "JavaScript",
-      "stars": 147,
-      "forks": 24,
-      "updatedAt": "2026-05-28T11:34:38+00:00",
-      "score": 24.225
+      "stars": 204,
+      "forks": 36,
+      "updatedAt": "2026-05-28T14:20:17+00:00",
+      "score": 24.7
+    },
+    {
+      "title": "The Party is cancelled, pack it up",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1tpvhup/the_party_is_cancelled_pack_it_up/",
+      "commentsUrl": "https://www.reddit.com/r/OpenAI/comments/1tpvhup/the_party_is_cancelled_pack_it_up/",
+      "summary": "Ai slopped",
+      "source": "Reddit",
+      "kind": "reddit",
+      "subreddit": "OpenAI",
+      "points": 1314,
+      "comments": 193,
+      "updatedAt": "2026-05-28T06:38:06+00:00",
+      "score": 23.81666666666667
     },
     {
       "title": "study8677/awesome-architecture",
@@ -681,28 +1232,17 @@
       "source": "GitHub",
       "kind": "repo",
       "language": "Vue",
-      "stars": 660,
-      "forks": 66,
-      "updatedAt": "2026-05-28T11:29:36+00:00",
-      "score": 22.5
-    },
-    {
-      "title": "Doorman11991/smallcode",
-      "url": "https://github.com/Doorman11991/smallcode",
-      "summary": "AI coding agent optimized for small LLMs. 87% benchmark with 4B-active model.",
-      "source": "GitHub",
-      "kind": "repo",
-      "language": "JavaScript",
-      "stars": 1500,
-      "forks": 112,
-      "updatedAt": "2026-05-28T10:35:06+00:00",
-      "score": 21.5
+      "stars": 692,
+      "forks": 71,
+      "updatedAt": "2026-05-28T14:30:13+00:00",
+      "score": 22.766666666666666
     }
   ],
   "counts": {
     "github": 18,
     "hn": 18,
-    "arxiv": 0,
+    "reddit": 18,
+    "arxiv": 16,
     "blogs": 18
   }
 }

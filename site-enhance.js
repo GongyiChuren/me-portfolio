@@ -67,21 +67,6 @@
   }
 
   function injectHomeRadarLink() {
-    const linkAll = $('.links .link-all');
-    if (!linkAll || $('#gc-radar-home-link')) return false;
-    const cols = $$('.el-col', linkAll);
-    const lastCol = cols[cols.length - 1];
-    const col = lastCol ? lastCol.cloneNode(true) : document.createElement('div');
-    col.id = 'gc-radar-home-link';
-    const item = $('.item', col) || col;
-    item.onclick = () => window.open('/radar/', '_blank');
-    const name = $('.name', col);
-    if (name) name.textContent = 'AI 雷达';
-    const svg = $('svg', col);
-    if (svg) {
-      svg.outerHTML = '<svg viewBox="0 0 48 48" width="26" height="26" fill="none" aria-hidden="true"><path d="M24 4l4.8 14.2L44 24l-15.2 5.8L24 44l-4.8-14.2L4 24l15.2-5.8L24 4z" fill="currentColor" opacity=".92"/><circle cx="24" cy="24" r="6" fill="#07120f" opacity=".9"/></svg>';
-    }
-    linkAll.appendChild(col);
     return true;
   }
 

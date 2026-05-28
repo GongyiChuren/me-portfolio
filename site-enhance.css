@@ -22,6 +22,26 @@
   color: rgba(255, 255, 255, .78);
 }
 
+.gc-radar-open {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  color: inherit;
+  text-decoration: none !important;
+  margin-bottom: 7px;
+}
+
+.gc-radar-cta {
+  color: rgba(255, 255, 255, .7);
+  font-size: .78rem;
+  white-space: nowrap;
+}
+
+.gc-radar-open:hover .gc-radar-cta {
+  color: #fff;
+}
+
 .gc-now-edit {
   border: 1px solid rgba(255, 255, 255, .22);
   color: rgba(255, 255, 255, .9);

@@ -157,7 +157,10 @@
     card.id = 'gc-tech-radar';
     card.className = 'gc-tech-radar';
     card.innerHTML = `
-      <div class="gc-radar-title">TECH RADAR</div>
+      <a class="gc-radar-open" href="/radar/" target="_blank" rel="noopener noreferrer">
+        <span class="gc-radar-title">TECH RADAR</span>
+        <span class="gc-radar-cta">打开 AI 雷达 →</span>
+      </a>
       <div class="gc-radar-list"><span class="gc-radar-muted">正在获取 AI / LLM / Agent 热点…</span></div>
     `;
     right.appendChild(card);

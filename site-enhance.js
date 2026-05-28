@@ -1,0 +1,213 @@
+(() => {
+  const CONFIG = {
+    nowKey: 'gc_now_building_items_v1',
+    defaultNow: ['正在考研 ლ(´ڡ`ლ)', 'Hermes Agent workflows', 'ProxySudo', 'Self-hosted tools', 'Kaoyan Wiki'],
+    tgUrl: 'https://t.me/LonglongBig78bot',
+    tgIcon: '/images/icon/telegram.png',
+  };
+
+  const $ = (selector, root = document) => root.querySelector(selector);
+  const $$ = (selector, root = document) => Array.from(root.querySelectorAll(selector));
+
+  const clean = (value) => String(value || '').replace(/\s+/g, ' ').trim();
+  const short = (value, length = 72) => {
+    const text = clean(value);
+    return text.length > length ? `${text.slice(0, length)}…` : text;
+  };
+
+  function getNowItems() {
+    try {
+      const parsed = JSON.parse(localStorage.getItem(CONFIG.nowKey) || '[]');
+      if (Array.isArray(parsed) && parsed.some(Boolean)) return parsed.map(clean).filter(Boolean).slice(0, 8);
+    } catch (_) {}
+    return CONFIG.defaultNow;
+  }
+
+  function saveNowItems(items) {
+    localStorage.setItem(CONFIG.nowKey, JSON.stringify(items.map(clean).filter(Boolean).slice(0, 8)));
+  }
+
+  function renderNowItems(card) {
+    const list = $('.gc-now-list', card);
+    list.innerHTML = '';
+    getNowItems().forEach((item) => {
+      const li = document.createElement('li');
+      li.textContent = item;
+      list.appendChild(li);
+    });
+  }
+
+  function injectTelegram() {
+    const linkWrap = $('.social .link');
+    if (!linkWrap || $('#gc-telegram-link', linkWrap)) return false;
+
+    const a = document.createElement('a');
+    a.id = 'gc-telegram-link';
+    a.href = CONFIG.tgUrl;
+    a.target = '_blank';
+    a.rel = 'noopener noreferrer';
+    a.setAttribute('aria-label', 'Telegram Bot');
+    a.addEventListener('mouseenter', () => {
+      const tip = $('.social .tip');
+      if (tip) tip.textContent = 'Telegram Bot：@LonglongBig78bot';
+    });
+    a.addEventListener('mouseleave', () => {
+      const tip = $('.social .tip');
+      if (tip) tip.textContent = '通过这里联系我吧';
+    });
+
+    const img = document.createElement('img');
+    img.className = 'icon';
+    img.src = CONFIG.tgIcon;
+    img.height = 24;
+    img.alt = 'Telegram';
+    a.appendChild(img);
+    linkWrap.appendChild(a);
+    return true;
+  }
+
+  function injectHomeRadarLink() {
+    const linkAll = $('.links .link-all');
+    if (!linkAll || $('#gc-radar-home-link')) return false;
+    const cols = $$('.el-col', linkAll);
+    const lastCol = cols[cols.length - 1];
+    const col = lastCol ? lastCol.cloneNode(true) : document.createElement('div');
+    col.id = 'gc-radar-home-link';
+    const item = $('.item', col) || col;
+    item.onclick = () => window.open('/radar/', '_blank');
+    const name = $('.name', col);
+    if (name) name.textContent = 'AI 雷达';
+    const svg = $('svg', col);
+    if (svg) {
+      svg.outerHTML = '<svg viewBox="0 0 48 48" width="26" height="26" fill="none" aria-hidden="true"><path d="M24 4l4.8 14.2L44 24l-15.2 5.8L24 44l-4.8-14.2L4 24l15.2-5.8L24 4z" fill="currentColor" opacity=".92"/><circle cx="24" cy="24" r="6" fill="#07120f" opacity=".9"/></svg>';
+    }
+    linkAll.appendChild(col);
+    return true;
+  }
+
+  function injectNowBuilding() {
+    const left = $('.left[data-v-82ebc9a3]') || $('.left');
+    if (!left || $('#gc-now-building')) return false;
+
+    const card = document.createElement('section');
+    card.id = 'gc-now-building';
+    card.className = 'gc-now-building cards';
+    card.innerHTML = `
+      <div class="gc-now-head">
+        <span class="gc-now-kicker">NOW BUILDING</span>
+        <button class="gc-now-edit" type="button" title="本机编辑，不用改仓库文件">编辑</button>
+      </div>
+      <ul class="gc-now-list"></ul>
+      <p class="gc-now-hint">本机可编辑：点“编辑”后会保存到当前浏览器。</p>
+    `;
+    renderNowItems(card);
+
+    $('.gc-now-edit', card).addEventListener('click', () => {
+      const current = getNowItems().join('\n');
+      const next = window.prompt('每行一条，最多 8 条。会保存到当前浏览器 localStorage。', current);
+      if (next === null) return;
+      const items = next.split(/[\n,，]+/).map(clean).filter(Boolean);
+      saveNowItems(items.length ? items : CONFIG.defaultNow);
+      renderNowItems(card);
+    });
+
+    const social = $('.social', left);
+    if (social && social.parentElement === left) social.insertAdjacentElement('afterend', card);
+    else left.appendChild(card);
+    return true;
+  }
+
+  async function getTechRadarItems() {
+    const items = [];
+
+    try {
+      const q = encodeURIComponent('AI OR LLM OR agent OR programming OR computer science');
+      const res = await fetch(`https://hn.algolia.com/api/v1/search_by_date?query=${q}&tags=story&hitsPerPage=20`, {
+        headers: { Accept: 'application/json' },
+      });
+      if (!res.ok) throw new Error(`HN ${res.status}`);
+      const hits = (await res.json()).hits || [];
+      hits
+        .filter((hit) => hit.title && (hit.url || hit.story_url))
+        .slice(0, 2)
+        .forEach((hit) => items.push({
+          title: short(hit.title),
+          url: hit.url || hit.story_url || `https://news.ycombinator.com/item?id=${hit.objectID}`,
+          source: 'HN',
+        }));
+    } catch (err) {
+      console.warn('Tech Radar: HN fetch failed', err);
+    }
+
+    try {
+      const since = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString().slice(0, 10);
+      const q = encodeURIComponent(`AI created:>${since}`);
+      const res = await fetch(`https://api.github.com/search/repositories?q=${q}&sort=stars&order=desc&per_page=8`, {
+        headers: { Accept: 'application/vnd.github+json' },
+      });
+      if (!res.ok) throw new Error(`GitHub ${res.status}`);
+      const repo = ((await res.json()).items || []).find((item) => item.full_name);
+      if (repo) {
+        items.push({
+          title: short(`${repo.full_name}: ${repo.description || 'trending AI repository'}`),
+          url: repo.html_url,
+          source: 'GitHub',
+        });
+      }
+    } catch (err) {
+      console.warn('Tech Radar: GitHub fetch failed', err);
+    }
+
+    return items.slice(0, 3);
+  }
+
+  function injectTechRadarShell() {
+    const right = $('.function .right') || $('.right.cards');
+    if (!right || $('#gc-tech-radar')) return false;
+
+    const oldHot = $('.hot-topic', right);
+    if (oldHot) oldHot.style.display = 'none';
+
+    const card = document.createElement('section');
+    card.id = 'gc-tech-radar';
+    card.className = 'gc-tech-radar';
+    card.innerHTML = `
+      <div class="gc-radar-title">TECH RADAR</div>
+      <div class="gc-radar-list"><span class="gc-radar-muted">正在获取 AI / LLM / Agent 热点…</span></div>
+    `;
+    right.appendChild(card);
+
+    getTechRadarItems().then((items) => {
+      const list = $('.gc-radar-list', card);
+      if (!items.length) {
+        list.innerHTML = '<span class="gc-radar-muted">AI 热点暂不可用</span>';
+        return;
+      }
+      list.innerHTML = '';
+      items.forEach((item) => {
+        const a = document.createElement('a');
+        a.href = item.url;
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+        a.className = 'gc-radar-item';
+        a.innerHTML = `<span class="gc-radar-source">${item.source}</span><span class="gc-radar-text"></span>`;
+        $('.gc-radar-text', a).textContent = item.title;
+        list.appendChild(a);
+      });
+    });
+    return true;
+  }
+
+  function enhance() {
+    const done = [injectTelegram(), injectHomeRadarLink(), injectNowBuilding(), injectTechRadarShell()];
+    return done.every(Boolean);
+  }
+
+  const timer = window.setInterval(() => {
+    if (enhance()) window.clearInterval(timer);
+  }, 300);
+  window.setTimeout(() => window.clearInterval(timer), 12000);
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', enhance, { once: true });
+  else enhance();
+})();

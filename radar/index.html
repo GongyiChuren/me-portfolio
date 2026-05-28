@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="GongyiChuren 的 AI / 计算机技术热搜雷达，聚合 GitHub、Hacker News、arXiv 和官方博客。" />
+  <meta name="theme-color" content="#0d1f1a" />
+  <link rel="icon" href="/images/icon/favicon.ico" />
+  <link rel="stylesheet" href="./radar.css" />
+  <title>AI / CS Radar · GongyiChuren</title>
+</head>
+<body>
+  <div class="mesh" aria-hidden="true"></div>
+  <header class="hero">
+    <nav class="topbar">
+      <a class="brand" href="/">GongyiChuren</a>
+      <div class="navlinks">
+        <a href="/">主页</a>
+        <a href="https://blog.gongyichuren.de/" target="_blank" rel="noreferrer">博客</a>
+        <a href="https://github.com/GongyiChuren" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </nav>
+    <section class="hero-grid">
+      <div>
+        <p class="eyebrow">AI / CS RADAR</p>
+        <h1>每天扫一眼，别错过新的工具、论文和技术讨论。</h1>
+        <p class="lead">聚合 GitHub 新项目、Hacker News 热议、arXiv 论文和 AI 官方博客。静态页面由 GitHub Actions 定时更新。</p>
+      </div>
+      <aside class="status-card">
+        <span class="status-dot"></span>
+        <div>
+          <b id="updated-text">正在读取数据…</b>
+          <small id="counts-text">GitHub · HN · arXiv · Blogs</small>
+        </div>
+      </aside>
+    </section>
+  </header>
+
+  <main>
+    <section class="toolbar" aria-label="筛选工具">
+      <div class="tabs" id="tabs">
+        <button data-section="highlights" class="active">精选</button>
+        <button data-section="github">GitHub</button>
+        <button data-section="hn">HN</button>
+        <button data-section="arxiv">arXiv</button>
+        <button data-section="blogs">官方/博客</button>
+      </div>
+      <label class="searchbox">
+        <span>搜索</span>
+        <input id="search" type="search" placeholder="agent / compiler / qwen / linux…" autocomplete="off" />
+      </label>
+    </section>
+
+    <section class="section-block" id="highlights-block">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">SIGNAL FIRST</p>
+          <h2>今日重点</h2>
+        </div>
+        <p>按相关性、热度和新鲜度混合排序。</p>
+      </div>
+      <div class="cards-grid featured" id="highlights"></div>
+    </section>
+
+    <section class="section-block" id="github-block">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">OPEN SOURCE MOMENTUM</p>
+          <h2>GitHub 新热项目</h2>
+        </div>
+        <p>最近创建/增长的 AI、LLM、Agent 和开发者工具仓库。</p>
+      </div>
+      <div class="cards-grid" id="github"></div>
+    </section>
+
+    <section class="section-block" id="hn-block">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">DEVELOPER DISCUSSION</p>
+          <h2>Hacker News 热议</h2>
+        </div>
+        <p>社区正在讨论的 AI 与计算机技术话题。</p>
+      </div>
+      <div class="cards-grid" id="hn"></div>
+    </section>
+
+    <section class="section-block" id="arxiv-block">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">RESEARCH RADAR</p>
+          <h2>arXiv 新论文</h2>
+        </div>
+        <p>cs.AI / cs.CL / cs.LG / cs.CV / cs.SE / cs.PL。</p>
+      </div>
+      <div class="cards-grid" id="arxiv"></div>
+    </section>
+
+    <section class="section-block" id="blogs-block">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">OFFICIAL SIGNALS</p>
+          <h2>官方博客与技术文章</h2>
+        </div>
+        <p>OpenAI、Anthropic、Google AI、Hugging Face、Simon Willison 等。</p>
+      </div>
+      <div class="cards-grid" id="blogs"></div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Built for GongyiChuren · static radar</span>
+    <a href="/">返回主页</a>
+  </footer>
+
+  <template id="card-template">
+    <article class="radar-card">
+      <div class="card-meta">
+        <span class="badge source"></span>
+        <span class="badge kind"></span>
+        <span class="date"></span>
+      </div>
+      <h3><a target="_blank" rel="noreferrer"></a></h3>
+      <p class="summary"></p>
+      <div class="extra"></div>
+    </article>
+  </template>
+
+  <script src="./radar.js" defer></script>
+</body>
+</html>

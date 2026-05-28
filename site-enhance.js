@@ -83,7 +83,7 @@
         <button class="gc-now-edit" type="button" title="本机编辑，不用改仓库文件">编辑</button>
       </div>
       <ul class="gc-now-list"></ul>
-      <p class="gc-now-hint">本机可编辑：点“编辑”后会保存到当前浏览器。</p>
+      <p class="gc-now-hint">仅保存在当前浏览器。</p>
     `;
     renderNowItems(card);
 
@@ -161,14 +161,14 @@
         <span class="gc-radar-title">TECH RADAR</span>
         <span class="gc-radar-cta">打开 AI 雷达 →</span>
       </a>
-      <div class="gc-radar-list"><span class="gc-radar-muted">正在获取 AI / LLM / Agent 热点…</span></div>
+      <div class="gc-radar-list"><span class="gc-radar-muted">更新中…</span></div>
     `;
     right.appendChild(card);
 
     getTechRadarItems().then((items) => {
       const list = $('.gc-radar-list', card);
       if (!items.length) {
-        list.innerHTML = '<span class="gc-radar-muted">AI 热点暂不可用</span>';
+        list.innerHTML = '<span class="gc-radar-muted">暂无内容</span>';
         return;
       }
       list.innerHTML = '';

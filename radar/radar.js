@@ -79,7 +79,7 @@ function renderSection(section) {
   if (!items.length) {
     const empty = document.createElement('div');
     empty.className = 'empty';
-    empty.textContent = state.query ? '没有匹配的条目。' : '这组数据暂时为空。';
+    empty.textContent = state.query ? '无匹配结果' : '暂无内容';
     el.appendChild(empty);
     return;
   }
@@ -122,8 +122,8 @@ async function loadData() {
       highlights: [],
       sections: { github: [], hn: [], reddit: [], arxiv: [], blogs: [] },
     };
-    document.querySelector('#updated-text').textContent = '数据读取失败';
-    document.querySelector('#counts-text').textContent = '稍后重试或返回主页';
+    document.querySelector('#updated-text').textContent = '读取失败';
+    document.querySelector('#counts-text').textContent = '请稍后重试';
   }
   renderStatus();
   renderAll();

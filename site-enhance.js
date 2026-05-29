@@ -23,10 +23,6 @@
     return CONFIG.defaultNow;
   }
 
-  function saveNowItems(items) {
-    localStorage.setItem(CONFIG.nowKey, JSON.stringify(items.map(clean).filter(Boolean).slice(0, 8)));
-  }
-
   function renderNowItems(card) {
     const list = $('.gc-now-list', card);
     list.innerHTML = '';
@@ -80,21 +76,10 @@
     card.innerHTML = `
       <div class="gc-now-head">
         <span class="gc-now-kicker">NOW BUILDING</span>
-        <button class="gc-now-edit" type="button" title="本机编辑，不用改仓库文件">编辑</button>
       </div>
       <ul class="gc-now-list"></ul>
-      <p class="gc-now-hint">仅保存在当前浏览器。</p>
     `;
     renderNowItems(card);
-
-    $('.gc-now-edit', card).addEventListener('click', () => {
-      const current = getNowItems().join('\n');
-      const next = window.prompt('每行一条，最多 8 条。会保存到当前浏览器 localStorage。', current);
-      if (next === null) return;
-      const items = next.split(/[\n,，]+/).map(clean).filter(Boolean);
-      saveNowItems(items.length ? items : CONFIG.defaultNow);
-      renderNowItems(card);
-    });
 
     const social = $('.social', left);
     if (social && social.parentElement === left) social.insertAdjacentElement('afterend', card);

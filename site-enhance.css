@@ -42,23 +42,6 @@
   color: #fff;
 }
 
-.gc-now-edit {
-  border: 1px solid rgba(255, 255, 255, .22);
-  color: rgba(255, 255, 255, .9);
-  background: rgba(255, 255, 255, .12);
-  border-radius: 999px;
-  padding: 3px 10px;
-  line-height: 1.45;
-  cursor: pointer;
-  transition: background .2s, transform .2s, border-color .2s;
-}
-
-.gc-now-edit:hover {
-  background: rgba(255, 255, 255, .2);
-  border-color: rgba(255, 255, 255, .4);
-  transform: translateY(-1px);
-}
-
 .gc-now-list {
   display: flex;
   flex-wrap: wrap;
@@ -79,12 +62,6 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.gc-now-hint {
-  margin-top: 9px;
-  font-size: .78rem;
-  color: rgba(255, 255, 255, .52);
 }
 
 .gc-tech-radar {
